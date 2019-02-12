@@ -56,11 +56,16 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  arr.splice(num);
-}
+    if (num % 3 === 2){
+      arr.pop
+    };
+  }
 
 const removeElements = (arr, callback) => {
+  for(let i =0; i <arr; i++ ){
   callback(arr);
+  }
+  return arr;
 }
 
 /* ------------------------------------------------------------------------------------------------
