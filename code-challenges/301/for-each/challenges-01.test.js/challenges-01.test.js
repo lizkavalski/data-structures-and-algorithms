@@ -56,14 +56,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-    if (num % 3 === 2){
-      arr.pop
-    };
+      if(num % 3 === 2){
+        arr.pop();
+      }
   }
 
 const removeElements = (arr, callback) => {
-  for(let i =0; i <arr; i++ ){
-  callback(arr);
+  for(let i =0; i <arr.length; i++ ){
+  callback(arr[i],arr);
   }
   return arr;
 }
@@ -75,8 +75,8 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  arr.removeWithForEach();
-  callback(arr);
+  removeWithForEach(arr);
+  callback(arr[i],arr);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,9 +118,8 @@ This function should use forEach to populate your grocery list based on the stor
 //     { name: 'bananas', available: true },
 //     { name: 'blueberries', available: false }
 //   ]
-  
-// }
-// callback(availableItems);
+//   return (availableItems);
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
