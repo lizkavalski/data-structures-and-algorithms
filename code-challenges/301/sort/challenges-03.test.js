@@ -53,7 +53,7 @@ const alphabetizeBetter = (arr) => {
    return a.localeCompare (b, undefined, {senitivity: 'base'})})
   return arr;
 };
-
+// localeCompare looks at the the string and sort by alphbtical order regradless if the letter is caperlized or lowercase.
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -109,7 +109,7 @@ const people = [
 
 const sortPeople = (arr) => {
   arr.sort((a,b)=>{
-    return a.lastName.localeCompare(b.lastName)
+    return a.lastName > b.lastName
   })
   return arr;
 };
@@ -129,10 +129,10 @@ const sortPeopleBetter = (arr) => {
     return a.age - b.age;
   })
   arr.sort((a,b)=> {
-    return a.firstName.localeCompare(b.firstName);
+    return a.firstName > b.firstName;
   })
   arr.sort ((a,b)=>{
-    return a.lastName.localeCompare(b.lastName);
+    return a.lastName > b.lastName;
   })
   return arr;
 };
