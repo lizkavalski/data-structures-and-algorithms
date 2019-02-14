@@ -68,7 +68,6 @@ const setStatusAsAuthor = (people) => {
   for(let i=0; i < people.length; i++ ){
      people[i].isAuthor =true;
   }
-  // people.push(people.isAuthor);
 }
 
 /* ------------------------------------------------------------------------------------------------
