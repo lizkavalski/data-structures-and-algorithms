@@ -37,7 +37,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  arr.filter(str => str.match(/[A-J][a-zA-Z]*/));
+  arr.filter(str => str.match(/[A-J][a-zA-Z]\w*/));
   return arr;
 };
 
@@ -58,6 +58,7 @@ const matchMonth = (input) => {
   return monthCheck.test(input);
 };
 
+// /
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -71,7 +72,7 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 const noPunctuation = str => {
   return str.match(/[a-az-Z]\s/);
 };
-
+///\w=\s/g
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -85,7 +86,7 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  //return str.replace(/[a,e,i,o,u]/g_');
+  //return str.replace(/[a|e|i|o|u]/g, '_');
 };
 
 /* ------------------------------------------------------------------------------------------------
