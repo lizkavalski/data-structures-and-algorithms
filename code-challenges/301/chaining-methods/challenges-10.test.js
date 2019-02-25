@@ -28,8 +28,8 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-    return input.reduce((acc,value) => {acc + value});
-    
+    return input.reduce((acc,value) => {
+      return input.map(acc+value)});
 };
 // I'm using reduce because I'm adding all the values of the arrays and have a single out.
 /* ------------------------------------------------------------------------------------------------
@@ -45,7 +45,8 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  input.filter(
+  input.map(
+    
 
   )
 };
