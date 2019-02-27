@@ -84,7 +84,7 @@ const snorlaxData = {
 };
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,8 +96,9 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 ------------------------------------------------------------------------------------------------ */
 
 const getStatName = (arr, minBaseStat) => {
-  // Solution code here...
+  // return arr.filter(element => element.baseStat > minBaseStat).map(element => element.stat.name)
 };
+//* your chaining array. the frist part is looking for the baseStats and checking if it has an items
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -164,9 +165,9 @@ For example: evenOddNumericValues(['Gregor', 2, 4, 1]) returns ['even', 'even', 
 ------------------------------------------------------------------------------------------------ */
 
 const evenOddNumericValues = (arr) => {
-  // Solution code here...
+  //return arr.filter(element => typeof element ==number).
 };
-
+//* typeof is a built in JS that tells JS what it looking for. 
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
