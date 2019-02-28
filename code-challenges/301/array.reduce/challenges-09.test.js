@@ -9,11 +9,15 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-    let newAarr = (accumulator, currentValue) => accumulator +
-    currentValue;
-    console.log(arr.reduce(newAarr))
+  return arr.reduce((acc, curr) => acc+= 1, 0);
+  
+  // let newAarr =
+    
+  //   (accumulator, currentValue) => accumulator +
+  //   currentValue;
+  //   console.log(arr.reduce(newAarr),0)
 
-        return arr.reduce(newAarr);
+  //       return arr.reduce(newAarr);
   };
 
 /* ------------------------------------------------------------------------------------------------
