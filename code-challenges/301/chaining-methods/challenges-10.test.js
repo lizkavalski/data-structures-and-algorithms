@@ -29,7 +29,7 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
     return input.reduce((acc,value) => {
-      return input.map(acc+value)});
+      return input.map(acc+value)},0);
 };
 // I'm using reduce because I'm adding all the values of the arrays and have a single out.
 /* ------------------------------------------------------------------------------------------------

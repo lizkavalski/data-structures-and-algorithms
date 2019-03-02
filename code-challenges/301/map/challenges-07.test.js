@@ -57,9 +57,9 @@ For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
 const charCode = (arr) => {
-  // Solution code here...
+  return arr.map(num => num.charCodeAt());
 };
-
+//charCodeat() gives the code number of the string
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -72,7 +72,7 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 
 const evenOdd = (arr) => {
   let map1 = arr.map( x => { 
-    return(x *3)% 2===0 ? 'even' : 'odd';
+    return(x *3)% 2===0 ? 'even' : 'odd'? !;
   });
   // console.log(map1);
 };
@@ -120,7 +120,7 @@ const snorlaxAbilities = {
 };
 
 const extractAbilities = (arr) => {
- 
+ arr.map()=> 
 };
 
 /* ------------------------------------------------------------------------------------------------
