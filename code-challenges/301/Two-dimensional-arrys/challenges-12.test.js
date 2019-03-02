@@ -92,12 +92,8 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  for ( let i =0; i < board.length; i++)
-    row=[];
-    let char = i === col ? ' ' : '#';
-    for(let j = 0; j < row.length; j++){
-      col.push
-    }
+  
+    
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,12 +105,12 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
+  let product =1;
   for(let i =0; i < numbers.length; i++){
     for( let j=0; j < numbers.length[0]; j++){
-      let product= val * idx;
-      return product;
+      product *= numbers[i][j]; 
     }
-    return numbers;
+    return product;
   }
 }
 
